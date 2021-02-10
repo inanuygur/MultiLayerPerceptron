@@ -7,4 +7,3 @@ Proposed network learns with back propagation and uses only sigmoid activation f
 
 Different learning rates and proper momentum rates are used for each layer. 
 Each layer's weighth initiated within the range -1 and 1 with 0.1 margin. 
-
