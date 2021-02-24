@@ -13,7 +13,7 @@ print('parent_dir: ', parent_dir)
 
 ''' ------------------------------------------------ '''
 # Egitim veri setini yukleme
-f = gzip.open(str(parent_dir) + "\\veriseti\\rar'lar\\train-images-idx3-ubyte.gz",'r')
+f = gzip.open(str(parent_dir) + "\\train-images-idx3-ubyte.gz",'r')
 
 image_size = 28
 num_images = 60000
@@ -29,7 +29,7 @@ for i in range(0, 60000):
   train_images.append(image)
 
 
-f = gzip.open(str(parent_dir) + "\\veriseti\\rar'lar\\train-labels-idx1-ubyte.gz",'r')
+f = gzip.open(str(parent_dir) + "\\train-labels-idx1-ubyte.gz",'r')
 f.read(8)
 train_labels = []
 for i in range(0, 60000):   
@@ -39,7 +39,7 @@ for i in range(0, 60000):
 
 
 # Test Veri setinin yukleme
-f = gzip.open(str(parent_dir) + "\\veriseti\\rar'lar\\t10k-images-idx3-ubyte.gz",'r')
+f = gzip.open(str(parent_dir) + "\\t10k-images-idx3-ubyte.gz",'r')
 
 image_size = 28
 num_images = 10000
@@ -55,7 +55,7 @@ for i in range(0, 10000):
   test_images.append(image)
 
 
-f = gzip.open(str(parent_dir) + "\\veriseti\\rar'lar\\t10k-labels-idx1-ubyte.gz",'r')
+f = gzip.open(str(parent_dir) + "\\t10k-labels-idx1-ubyte.gz",'r')
 f.read(8)
 test_labels = []
 for i in range(0, 10000):   
@@ -90,10 +90,10 @@ print('test_labels.shape:', test_labels.shape)
 
 ''' ------------------------------------------------ '''
 # # Ana kodda deneme yapabilmek icin bu kod blogunu calistirmak ve numpy arraylerini elde etmeniz gerekiyor <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# np.save(str(parent_dir) + "\\veriseti\\numpies\\train_images", train_images)
-# np.save(str(parent_dir) + "\\veriseti\\numpies\\train_labels", train_labels)
-# np.save(str(parent_dir) + "\\veriseti\\numpies\\test_images", test_images)
-# np.save(str(parent_dir) + "\\veriseti\\numpies\\test_labels", test_labels)
+# np.save(str(parent_dir) + "\\numpies\\train_images", train_images)
+# np.save(str(parent_dir) + "\\numpies\\train_labels", train_labels)
+# np.save(str(parent_dir) + "\\numpies\\test_images", test_images)
+# np.save(str(parent_dir) + "\\numpies\\test_labels", test_labels)
 
 ''' ------------------------------------------------ '''
 plt.imshow(test_images[5])
