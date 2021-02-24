@@ -131,10 +131,10 @@ def ileriye_adim(inputs, parameters, step):
 parent_dir = Path(real_filepath).parent
 
 # veri setlerini cekme
-training_set = np.load(str(parent_dir) + "\\veriseti\\numpies\\train_images.npy")
-test_set = np.load(str(parent_dir) + "\\veriseti\\numpies\\test_images.npy")
-training_set_labels = np.load(str(parent_dir) + "\\veriseti\\numpies\\train_labels.npy")
-test_set_labels = np.load(str(parent_dir) + "\\veriseti\\numpies\\test_labels.npy")
+training_set = np.load(str(parent_dir) + "\\numpies\\train_images.npy")
+test_set = np.load(str(parent_dir) + "\\numpies\\test_images.npy")
+training_set_labels = np.load(str(parent_dir) + "\\numpies\\train_labels.npy")
+test_set_labels = np.load(str(parent_dir) + "\\numpies\\test_labels.npy")
 
 # agin katman bilgilerini belirleme
 giris_boyutu = training_set[0].shape[0] * training_set[0].shape[1]
