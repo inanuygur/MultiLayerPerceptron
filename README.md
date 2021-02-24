@@ -15,8 +15,9 @@ Download the MNIST dataset from "The MNIST Database" site using 'http://yann.lec
 Move "multilayerPerceptron.py" code next to prepdataset.py and run multilayerPerceptron.py. Process can and will be slow due to inefficiency in the code but result will be display on the screen as one iteration completes. 
 Default stopping point for training session is an loss error value. Once the error goes under given value, training will stop. Obtained weights can be stored in a numpy array file. 
 
+- - - -
 
-# MultiLayerPerceptron
+# Çok Katmanlı Algılayıcı
 ## MNIST veri kümesi için Çok Katmanlı Algılayıcı'nın bir uygulaması
 
 Bu proje, herhangi bir ML kitaplığı kullanmadan çok katmanlı algılayıcının temel bir uygulamasıdır.
